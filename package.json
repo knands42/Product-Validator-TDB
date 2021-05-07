@@ -1,0 +1,23 @@
+{
+  "name": "Product-Validator-TDB",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:caiofernandes00/Product-Validator-TDB.git",
+  "author": "Caio <caiow.wk@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "npx mocha -r ts-node/register -w --parallel __tests__/**.spec.ts",
+    "test:cov": "npx nyc npx mocha -r ts-node/register --parallel __tests__/**.spec.ts",
+    "start": "tsnd src"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.17",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^15.0.2",
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "nyc": "^15.1.0",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.4"
+  }
+}
